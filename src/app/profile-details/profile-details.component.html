@@ -1,0 +1,58 @@
+<div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="position:absolute;background-color: blue;">
+        <div class="container">
+          <a class="navbar-brand" style="color:white">Demo</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="padding-left: 50%;">
+              <li class="nav-item active">
+                <a class="nav-link" href="#" style="color:white">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">JOBS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">CLIENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">EMPLOYES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+<div style=" display:flex;padding-top: 5%;">
+    <div class="profileimg">
+        <img style="width:310px; height:325px; margin:20px; margin-left: 200px;" [src]="userData?.file">
+    </div>
+        
+    <div>
+        <p style="margin-left:150px; font-size: medium;  margin-top:100px;">I'm {{userData?.fname}}{{userData?.lname}} and I'm 
+            {{userData?.age}} years and you can send your new emails to
+            <br>{{userData?.email}}, I live in the state of {{userData?.state}}.I like to play {{userData?.tags}}.And
+            please send me newseltter,
+            <br>please reach out to me  through   my  contect number {{userData?.phone}}.
+        </p><br><br>
+        <button style="align-self: center; margin-left: 300px;" type="button" class="btn btn-warning" (click)="editProfile()"> Edit Profile</button>
+
+    </div>
+</div><br><br>
+
+<!--footer-->
+<div class="row">
+<div class="col-12" style="text-align: center; background-color: black; color: white; border-bottom: double;border-color: blue;"><br><br>
+<p>Subscribe to our Job Seeker Mailing List</p><br>
+<input class="far fa-mail" style="width: 400px;height: 50px;background-color: black;color: white; border-radius: 4px;" type="email" name="email" placeholder="Enter Your Email Address">
+<span><i class="far fa-envelope"></i></span><br><br><br>
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,11 @@
+.navitem {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    
+}
+
+.navbar {
+    margin-top: 20px;
+    font-size: 15px;
+}
