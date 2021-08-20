@@ -35,14 +35,11 @@ export class ProfileDetailsComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       this.userService.update(result,this.userService.createdUserId).subscribe((response)=>{
         console.log('updateResponse::',response);
-      })
       this.userService.take(this.userService.createdUserId).subscribe(response=>{
         this.userData = response;
       })
       });
+    });
      
   }
-
-  
-
 }
